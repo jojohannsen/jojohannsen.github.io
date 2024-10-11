@@ -11,7 +11,7 @@ This is how I'm spending my retirement, learning how to live with reasoning assi
 These are things that are beyond my abilities.  However, models will assist me.  I'm still working out
 exactly *how* the models will help.  But looking forward to this way of working, and what is now possible.
 
-- gen_graph - langgraph architectures experimental UI and representation, to make things easier for reasoning assistant. [(site)](https://gengraph-production.up.railway.app/) [(src)](https://github.com/jojohannsen/gen_graph)
+- gen_graph - langgraph architectures experimental UI and representation, to make things easier for reasoning assistant. <a href="https://gengraph-production.up.railway.app/" target="_blank">(site)</a> <a href="https://github.com/jojohannsen/gen_graph" target="_blank">(src)</a>
 - life_maps - conversation processing agent for building data context around time, place, and memories
 - human_llm - tight coupling of human and LLM for navigating reasoning tasks
 - mem_assist - augmented reality and conversational data to provide personal context for a situation
