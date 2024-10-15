@@ -8,7 +8,7 @@ It's quiet here in Joshua Tree.  The days have 36 hours.
 The picture you've imagined is human.  Something humans like to process.
 
 ```python
-result = human.invoke("It's quite here in Joshua Tree.  The days have 36 hours.")
+result = human.invoke("It's quiet here in Joshua Tree.  The days have 36 hours.")
 ```
 
 What data type is `result`?
