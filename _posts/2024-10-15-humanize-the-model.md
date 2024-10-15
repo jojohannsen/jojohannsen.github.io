@@ -49,14 +49,19 @@ But we really can't create lots of different models for the same human.  It woul
 
 ```python
 class HumanSoFar(BaseModel):
-  feelings: Feelings,
+  feelings: Feelings
   address: PhysicalAddress
   
 super_realistic_human = ChatOpenAI(model="gpt-4o").with_structured_output(HumanSoFar)
 ```
 
+Invoking the above 'super_realistic_human' gives:
+```python
+HumanSoFar(feelings=Feelings(happy=True, sincere=True, sad=False), address=PhysicalAddress(name='Joshua Tree', city_name=None))
+```
+
 ---
 
-The above is what I'm going to try.  Something like [Honcho](https://honcho.dev/) does this much better, despite my human being 'super_realistic'.  That was an exaggeration, I'm not even sure the code compiles.
+Something like [Honcho](https://honcho.dev/) has a much more advanced model and implementation, so would be much more human-like.
 
-Also, [trustcall](https://www.youtube.com/watch?v=-H4s0jQi-QY) allows more complex models to be populated more reliably.   I don't think the above are complicated enough to need it, but I'd like them to be.
+Also, [trustcall](https://www.youtube.com/watch?v=-H4s0jQi-QY) allows more complex models to be populated more reliably.   The above example isn't complicated enough to need it.
