@@ -1,7 +1,7 @@
 ---
 title: "Wandering Models"
 date: 2024-10-16
-categories: agents, fasthtml, fastlite
+categories: agents
 ---
 During the pandemic, I was looking into machine learning in my 'spare time'.  I was still working, so my time was limited.  I ran across this [fastai](https://course.fast.ai/) course, and the approach that [Jeremy Howard](https://www.youtube.com/@howardjeremyp) takes towards software development.  One way to describe his approach is in terms of cognitive load -- with fastai, fasthtml, fastlite -- these all make very complex things as simple as possible.
 
