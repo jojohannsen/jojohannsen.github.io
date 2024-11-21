@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="home">
+  {{ content }}
+
+  {% if site.posts.size > 0 %}
+  <ul class="post-grid">
+    {% for post in site.posts %}
+    <li class="card">
+      <div class="card-content">
+        <h3>
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h3>
+        <span class="card-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+        {% if post.description %}
+        <p class="card-excerpt">{{ post.description }}</p>
+        {% else %}
+        <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>

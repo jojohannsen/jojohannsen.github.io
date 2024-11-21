@@ -1,0 +1,121 @@
+---
+---
+
+@import "minima";
+
+// Modern Typography
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  font-size: 16px;
+  background: #f8f9fa;
+}
+
+.home {
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-content {
+      padding: 1.5rem;
+
+      h3 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.25rem;
+        line-height: 1.3;
+        
+        a {
+          color: #24292e;
+          text-decoration: none;
+          
+          &:hover {
+            color: #0366d6;
+          }
+        }
+      }
+
+      .card-meta {
+        display: block;
+        font-size: 0.875rem;
+        color: #586069;
+        margin-bottom: 1rem;
+      }
+
+      .card-excerpt {
+        color: #444;
+        font-size: 0.95rem;
+        margin: 0;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
+
+// Better Code Highlighting
+.highlight {
+  background: #f6f8fa;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-x: auto;
+
+  pre {
+    margin: 0;
+    background: none;
+    border: none;
+  }
+
+  .c { color: #6a737d; } /* Comment */
+  .k { color: #d73a49; } /* Keyword */
+  .s { color: #032f62; } /* String */
+  .n { color: #24292e; } /* Name */
+  .o { color: #d73a49; } /* Operator */
+  .p { color: #24292e; } /* Punctuation */
+}
+
+// Responsive Design
+@media screen and (max-width: 600px) {
+  .home {
+    .post-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+}
